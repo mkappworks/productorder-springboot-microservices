@@ -4,24 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f423c90-7f4b-4b46-ae70-c681b16a3cb0" name="Changes" comment="Calling InventoryService to check product is in stock">
-      <change afterPath="$PROJECT_DIR$/discovery-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/src/main/java/com/mkappworks/discoveryserver/DiscoveryServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/mkappworks/inventoryservice/InventoryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/mkappworks/inventoryservice/InventoryServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/mkappworks/orderservice/OrderServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/mkappworks/orderservice/OrderServiceApplication.java" afterDir="false" />
+    <list default="true" id="6f423c90-7f4b-4b46-ae70-c681b16a3cb0" name="Changes" comment="Annotated with @EnableEurekaClient">
       <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/mkappworks/orderservice/config/WebClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/mkappworks/orderservice/config/WebClientConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/mkappworks/orderservice/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/mkappworks/orderservice/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/mkappworks/productservice/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/mkappworks/productservice/ProductServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +216,7 @@
       <workItem from="1695695941425" duration="788000" />
       <workItem from="1695696744965" duration="5724000" />
       <workItem from="1695739960875" duration="5393000" />
-      <workItem from="1695852560930" duration="4604000" />
+      <workItem from="1695852560930" duration="4930000" />
     </task>
     <task id="LOCAL-00001" summary="Adding ProductService with test">
       <option name="closed" value="true" />
@@ -273,7 +258,39 @@
       <option name="project" value="LOCAL" />
       <updated>1695852765820</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added DiscoveryServer">
+      <option name="closed" value="true" />
+      <created>1695857351723</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695857351723</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added spring-cloud-starter-netflix-eureka-client dependency">
+      <option name="closed" value="true" />
+      <created>1695857382142</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695857382142</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Updated with spring.application.name and eureka.client.serviceUrl.defaultZone">
+      <option name="closed" value="true" />
+      <created>1695857416868</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1695857416868</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Annotated with @EnableEurekaClient">
+      <option name="closed" value="true" />
+      <created>1695857453901</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1695857453901</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +313,11 @@
     <MESSAGE value="Added WebClientConfig in OrderService" />
     <MESSAGE value="Added InventoryService module" />
     <MESSAGE value="Calling InventoryService to check product is in stock" />
-    <option name="LAST_COMMIT_MESSAGE" value="Calling InventoryService to check product is in stock" />
+    <MESSAGE value="Added DiscoveryServer" />
+    <MESSAGE value="Added spring-cloud-starter-netflix-eureka-client dependency" />
+    <MESSAGE value="Updated with spring.application.name and eureka.client.serviceUrl.defaultZone" />
+    <MESSAGE value="Annotated with @EnableEurekaClient" />
+    <option name="LAST_COMMIT_MESSAGE" value="Annotated with @EnableEurekaClient" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/productorder_springboot_microservices$DiscoveryServerApplication.ic" NAME="DiscoveryServerApplication Coverage Results" MODIFIED="1695856106017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
