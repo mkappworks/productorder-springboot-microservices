@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f423c90-7f4b-4b46-ae70-c681b16a3cb0" name="Changes" comment="Updated uri of the inventory-service api call">
-      <change afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/mkappworks/apigateway/ApiGatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="6f423c90-7f4b-4b46-ae70-c681b16a3cb0" name="Changes" comment="Added Api-Gateway">
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-server/src/main/java/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,12 +55,13 @@
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/Users/malithkuruppu/IdeaProjects/productorder-springboot-microservices/api-gateway/src/main/resources",
+    "last_opened_file_path": "/Users/malithkuruppu/IdeaProjects/productorder-springboot-microservices/discovery-server/src/main/java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
     "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
   },
@@ -77,6 +81,7 @@
       <recent name="com.mkappworks.productservice.dto" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/discovery-server/src/main/java" />
       <recent name="$PROJECT_DIR$/api-gateway/src/main/resources" />
       <recent name="$PROJECT_DIR$/inventory-service/src/main/java" />
       <recent name="$PROJECT_DIR$/product-service/src/test" />
@@ -219,9 +224,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ApiGatewayApplication" />
         <item itemvalue="Spring Boot.OrderServiceApplication" />
         <item itemvalue="Spring Boot.InventoryServiceApplication" />
+        <item itemvalue="Spring Boot.ApiGatewayApplication" />
         <item itemvalue="JUnit.ProductServiceApplicationTests" />
         <item itemvalue="JUnit.ProductServiceApplicationTests.shouldCreateProduct" />
       </list>
@@ -240,7 +245,7 @@
       <workItem from="1695696744965" duration="5724000" />
       <workItem from="1695739960875" duration="5393000" />
       <workItem from="1695852560930" duration="5026000" />
-      <workItem from="1695908296607" duration="2736000" />
+      <workItem from="1695908296607" duration="5181000" />
     </task>
     <task id="LOCAL-00001" summary="Adding ProductService with test">
       <option name="closed" value="true" />
@@ -330,7 +335,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695857589219</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added Api-Gateway">
+      <option name="closed" value="true" />
+      <created>1695937024615</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1695937024615</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +372,8 @@
     <MESSAGE value="Annotated with @EnableEurekaClient" />
     <MESSAGE value="Changed to return WebClient.Builder" />
     <MESSAGE value="Updated uri of the inventory-service api call" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated uri of the inventory-service api call" />
+    <MESSAGE value="Added Api-Gateway" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Api-Gateway" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/productorder_springboot_microservices$DiscoveryServerApplication.ic" NAME="DiscoveryServerApplication Coverage Results" MODIFIED="1695856106017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
