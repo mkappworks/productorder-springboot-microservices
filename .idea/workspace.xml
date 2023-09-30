@@ -5,18 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f423c90-7f4b-4b46-ae70-c681b16a3cb0" name="Changes" comment="Added Distributed Tracing using&#10;Spring Cloud Starter Sleuth and  Zipkin">
+      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/mkappworks/notificationservice/NotificationServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/mkappworks/notificationservice/event/OrderPlacedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/mkappworks/orderservice/event/OrderPlacedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/mkappworks/orderservice/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/mkappworks/orderservice/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +104,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
+  <component name="RunManager" selected="Spring Boot.NotificationServiceApplication">
     <configuration name="ProductServiceApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="product-service" />
       <extension name="coverage">
@@ -181,6 +181,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NotificationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="notification-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mkappworks.notificationservice.NotificationServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -218,6 +227,7 @@
     <list>
       <item itemvalue="JUnit.ProductServiceApplicationTests" />
       <item itemvalue="JUnit.ProductServiceApplicationTests.shouldCreateProduct" />
+      <item itemvalue="Spring Boot.NotificationServiceApplication" />
       <item itemvalue="Spring Boot.ProductServiceApplication" />
       <item itemvalue="Spring Boot.DiscoveryServerApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
@@ -249,7 +259,8 @@
       <workItem from="1695852560930" duration="5026000" />
       <workItem from="1695908296607" duration="5500000" />
       <workItem from="1696080008904" duration="241000" />
-      <workItem from="1696080340350" duration="4343000" />
+      <workItem from="1696080340350" duration="4486000" />
+      <workItem from="1696104987603" duration="3424000" />
     </task>
     <task id="LOCAL-00001" summary="Adding ProductService with test">
       <option name="closed" value="true" />
@@ -363,7 +374,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696082907208</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added Distributed Tracing using&#10;Spring Cloud Starter Sleuth and  Zipkin">
+      <option name="closed" value="true" />
+      <created>1696084785525</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1696084785526</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,7 +414,8 @@
     <MESSAGE value="Added Api-Gateway" />
     <MESSAGE value="Added Authentication" />
     <MESSAGE value="Added Circuit Breaker using Resilience4J" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Circuit Breaker using Resilience4J" />
+    <MESSAGE value="Added Distributed Tracing using&#10;Spring Cloud Starter Sleuth and  Zipkin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Distributed Tracing using&#10;Spring Cloud Starter Sleuth and  Zipkin" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/productorder_springboot_microservices$DiscoveryServerApplication.ic" NAME="DiscoveryServerApplication Coverage Results" MODIFIED="1695856106017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
